@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ilerioluwakiiye">
+        <meta name="description" content="Shop for your goods on this app by Ilerioluwakiiye">
+        <meta name="keywords" content="Practice">
+        <title>JavaScript Practice</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="javascript" type="text/javascript" href="index.js">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
+    </head>
+    <body">
+        <!--
+            As a user, 
+            I should be able to add objects to cart
+            I should be able to create an account and login 
+            I should be able to see the see the list of items in my cart
+            I should be able to filter products 
+            I should be able to see the prices of objects in my cart
+            I should see every product details
+        -->
+        <div class="all-content">
+            <!--======A wrapping div to control the width of every element====-->
+
+
+            <!--The responsive navigation bar-->
+            <nav class="navigation">
+                <div class="navigation-wrapper">
+                    <div class="cart-wrapper">
+                        <a href="" class="cart"><img src="img/cart.png" alt="" class="cart-icon"></a>
+                    </div>
+                    <div class="hr-line">
+                        <img src="img/hr-line.png" alt="">
+                    </div>
+                </div>
+            </nav>
+            <!--====End of navigaition bar====-->
+
+
+            <main>
+                
+                <div class="highlighted-photograph">
+                    <!--=====The highlighted image=====-->
+                    <div class="responsive">
+                        <h1 class="name-of-image">Samurai King Resting</h1>
+                        <button class="add-to-cart hiddenonmobile">ADD TO CART</button>
+                    </div>
+                    <div class="photo">
+                        <div class="label">Photo of the day</div>
+                        <img src="img/highlighted-image.png" alt="">
+                    </div>
+                    <div class="responsive mobile-cart">
+                        <button class="add-to-cart hiddenondesktop">ADD TO CART</button>
+                    </div>
+
+                    <div class="flexondesktop">
+                        <div class="about">
+                            <h3>About the Samurai King Resting</h3>
+                            <div class="category-of-image">Pets</div>
+                            <div class="about-text">
+                                <p>
+                                    So how did the classical Latin become so incoherent? According 
+                                    to McClintock, a 15th century typesetter likely scrambled part of 
+                                    Cicero's De Finibus in order to provide placeholder text to mockup 
+                                    various fonts for a type specimen book.So how did the classical Latin 
+                                    become so incoherent? According to McClintock, a 15th century typesetter 
+                                    likely scrambled part of Cicero's De Finibus in order to provide placeholder 
+                                    text to mockup various fonts for a type specimen book.So how did the 
+                                    classical Latin become so incoherent? According to McClintock.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="featured">
+                            <h3>People also buy</h3>
+                            <div class="featured-images flex">
+                                <img src="img/featured-one.png" alt="" class="featured-one">
+                                <img src="img/featured-two.png" alt="" class="featured-two">
+                                <img src="img/featured-three.png" alt="" class="featured-three">
+                            </div>
+                            <div class="details">
+                                <h3>Details</h3>
+                                <p>Size: 1020 x 1020 pixel</p>
+                                <p>Size: 15 mb</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="hr-line">
+                    <img src="img/hr-line.png" alt="">
+                </div>
+
+
+                <div class="flexx">
+                    <div class="sale-header">Photography<span></span> / <span>Premium Photos</span></div>
+                    <div class="options">
+                        <div class="sort-by hiddenonmobile">
+                            <span><img src="img/sort.png" alt=""> Sort By </span>
+                            Price
+                        </div>
+                        <div class="toggle hiddenondesktop">
+                            <img src="img/toggle.png" alt="">
+                        </div> 
+                    </div>
+                </div><br><br><br><br>
+                
+                <div class="flex-around">
+                    <div class="for-sale">
+    
+                        <div class="filters">
+                            <div class="desktop">
+                                <div class="hiddenonmobile">
+                                    <!--The desktop version of the filters for prioritized images-->
+                                    <h4>Category</h4>
+                                    <!--The category section-->
+                                    <div class="category">
+                                        <div>
+                                            <input type="checkbox" name="this" value="People" id="people"><label for="people"> People</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Premium" id="Premium"><label for="Premium"> Premium</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Pets" id="Pets"><label for="Pets"> Pets</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox"  name="this" value="Food" id="Food"><label for="Food"> Food</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Landmarks" id="Landmarks"><label for="Landmarks"> Landmarks</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Cities" id="Cities"><label for="Cities"> Cities</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Nature" id="Nature"><label for="Nature"> Nature</label>
+                                        </div>
+                                    </div>
+    
+                                    <img src="img/small-hr-line.png" alt="">
+                                    <div class="price">
+                                        <h4>Price range</h4>
+                                        <div>
+                                            <input type="checkbox" name="price" id="priceone"><label for="priceone"> Lower than $20</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="price" id="pricetwo"><label for="pricetwo"> $20 - $100</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="price" id="pricethree"><label for="pricethree"> $100 - $200</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="price" id="pricefour"><label for="pricefour"> More than $200</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="mobile">
+                                <div class="hiddenondesktop whenyouclick">
+                                    <!--The mobile version of the filters for prioritized images-->
+                                    <h4>Filter</h4>
+                                    <div class="category">
+                                        <div>
+                                            <input type="checkbox" name="this" value="People" id="peoplem"><label for="peoplem"> People</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Premium" id="Premiumm"><label for="Premiumm"> Premium</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Pets" id="Petsm"><label for="Petsm"> Pets</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Food" id="Foodm"><label for="Foodm"> Food</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Landmarks" id="Landmarksm"><label for="Landmarksm"> Landmarks</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Cities" id="Citiesm"><label for="Citiesm"> Cities</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="this" value="Nature" id="Naturem"><label for="Naturem"> Nature</label>
+                                        </div>
+                                    </div>
+        
+                                    <img src="img/small-hr-line.png" alt="">
+                                    <div class="price">
+                                        <h4>Price range</h4>
+                                        <div>
+                                            <input type="checkbox" name="price" id="priceonem"><label for="priceonem"> Lower than $20</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="price" id="pricetwom"><label for="pricetwom"> $20 - $100</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="price" id="pricethreem"><label for="pricethreem"> $100 - $200</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" name="price" id="pricefourm"><label for="pricefourm"> More than $200</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="products">
+                            
+                        <div class="flexondesktop">
+                            <div class="product">
+                                <div class="product1">
+                                    <img src="products/product1.png">
+                                    <span class="bestseller">Best Seller</span>
+                                    <span class="addtocart">ADD TO CART</span>
+                                    <div class="product-info">
+                                        <div class="productcategory">People</div>
+                                        <div class="productname">Red Bench</div>
+                                        <div class="productprice">$3.89 </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="product">
+                                <div class="product2">
+                                    <img src="products/product2.png">
+                                    <span class="addtocart">ADD TO CART</span>
+                                    <div class="product-info">
+                                        <div class="productcategory">People</div>
+                                        <div class="productname">Egg Balloon</div>
+                                        <div class="productprice">$93.89 </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="product">
+                                <div class="product3">
+                                    <img src="products/product3.png">
+                                    <span class="addtocart">ADD TO CART</span>
+                                    <div class="product-info">
+                                        <div class="productcategory">People</div>
+                                        <div class="productname">Egg Balloon</div>
+                                        <div class="productprice">$93.89 </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flexondesktop">
+                            <div class="product">
+                                <div class="product1">
+                                    <img src="products/product1.png">
+                                    <span class="addtocart">ADD TO CART</span>
+                                    <div class="product-info">
+                                        <div class="productcategory">People</div>
+                                        <div class="productname">Red Bench</div>
+                                        <div class="productprice">$3.89 </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="product">
+                                <div class="product2">
+                                    <img src="products/product2.png">
+                                    <span class="addtocart">ADD TO CART</span>
+                                    <div class="product-info">
+                                        <div class="productcategory">People</div>
+                                        <div class="productname">Egg Balloon</div>
+                                        <div class="productprice">$93.89 </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="product">
+                                <div class="product3">
+                                    <img src="products/product3.png">
+                                    <span class="addtocart">ADD TO CART</span>
+                                    <div class="product-info">
+                                        <div class="productcategory">People</div>
+                                        <div class="productname">Egg Balloon</div>
+                                        <div class="productprice">$93.89 </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="numbering">
+                            <div class="flex">
+                                <div id="previous"><</div>
+                                <div class="number one">1</div>
+                                <div class="number two">2</div>
+                                <div class="number three" id="active">3</div>
+                                <div class="number four">4</div>
+                                <div id="next">></div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

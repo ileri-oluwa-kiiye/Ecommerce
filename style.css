@@ -1,0 +1,514 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --font-family: "Archivo", serif;
+    --max-content-width: 1390px;
+    --category-color:   #656565;
+}
+
+.flexondesktop{
+    display: flex;
+}
+
+
+.hiddenondesktop{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+div.all-content{
+    padding: 5% 10%;
+    max-width: var(--max-content-width);
+    margin: auto;
+    font-family: var(--font-family)
+}
+
+div.category-of-image{
+    color: var(--category-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+/*--------------The navigation bar-------------------*/
+nav .cart-wrapper{
+    padding-right: 3%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .cart-icon{
+    width: 30px;
+}
+
+/*The horizontal lines*/
+div.hr-line img{
+    width: 80vw;
+    max-width: var(--max-content-width);
+    height: 3px;
+}
+/*------End of navigation----*/
+
+.mobile-cart .add-to-cart{
+    width: 90vw;
+}
+
+
+
+
+/*-------The highlighted image and c0----*/
+.highlighted-photograph .responsive{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlighted-photograph .name-of-image{
+    font-size: 30px;
+}
+
+.highlighted-photograph .add-to-cart{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border: none;
+    font-size: 13px;
+    padding: 7px 25px;
+}
+
+
+.highlighted-photograph .add-to-cart:hover{
+    padding: 5px 23px;
+    border: 2px solid red;
+}
+
+.highlighted-photograph .add-to-cart:active{
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+}
+
+
+div.highlighted-photograph div.photo{
+    position: relative;
+}
+
+.highlighted-photograph .photo img{
+    z-index: 1;
+    width: 80vw;
+    max-width: var(--max-content-width);
+}
+
+div.highlighted-photograph div.photo div.label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    padding: 12px 50px;
+    background: rgb(255, 255, 255, 1);
+}
+
+.highlighted-photograph .flexondesktop{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+
+.highlighted-photograph .about{
+    width: 45vw;
+    max-width: 900px;
+    padding-right: 4%;
+}
+
+.highlighted-photograph .flexondesktop .featured{
+    text-align: right;
+}
+
+
+.highlighted-photograph .details p{
+    color: var(--category-color);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.highlighted-photograph .about p{
+    padding-top: 15px;
+    color: var(--category-color);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.highlighted-photograph h3{
+    padding-bottom: 15px;
+}
+
+.highlighted-photograph .about-text{
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+
+
+.featured .featured-images img{
+    padding: 10px;
+}
+
+.flexx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+    margin-top: 40px;
+}
+
+.for-sale span{
+    color: var(--category-color);
+    padding: 1vw;
+}
+
+.for-sale div div{
+    padding: 10px;
+    padding-left: 0%;
+}
+
+.filters .desktop{
+    width: fit-content;
+}
+
+.filters .desktop label{
+    padding-left: 10px;
+}
+
+
+.filters h4{
+    font-size: 19px;
+    padding: 10px 3px 10px 0px;
+}
+
+
+.sale-header{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sale-header span{
+    color: var(--category-color);
+    font-weight: 100;
+}
+
+/*================Working on the styling of the checkboxes======================*/
+div.filters [type="checkbox"] {
+    visibility: hidden;
+}
+div.filters [type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 25px;
+}
+
+div.filters [type="checkbox"] + label::before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    outline: 1px solid rgb(75, 75, 75);
+    border-radius: 2px;
+    background: white;
+}
+
+div.filters [type="checkbox"]:checked + label::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    outline: 1px solid rgb(75, 75, 75);
+    border-radius: 2px;
+    background-image: url(img/check-mark-svg.png);
+    background-size: contain;
+    transform: scale(1);
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+div.filters [type="checkbox"]:not(:checked) + label::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    outline: 1px solid rgb(75, 75, 75);
+    border-radius: 2px;
+    background-image: url(img/check-mark-svg.png);
+    background-size: contain;
+    transform: scale(0);
+    opacity: 0;
+}
+
+/*================Done with the styling of the checkboxes======================*/
+
+
+.products .product {
+    position: relative;
+    padding-top: 0%;
+    width: 219px;
+    padding-bottom: 55px;
+    margin-right: 10px;
+}
+
+
+.products .product span.bestseller{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 6px 17px;
+    background-color: white;
+}
+
+
+.products .product .addtocart{
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7px 3px;
+}
+
+.products .product .addtocart:hover{
+    border: 2px solid red;
+    cursor: pointer;
+    padding: 5px 3px;
+}
+
+.products .product .addtocart:active{
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+}
+
+ div.products div.flex{
+    width: 60%;
+    justify-content: space-between;
+}
+
+.product .productinfo{
+    padding: 30px 20px
+}
+
+.products .product img{
+    height: 300px;
+    width: 219px;
+}
+
+div.flex-around{
+    display: flex;
+    justify-content:space-between;
+}
+
+.product .product-info{
+    margin-top: 15px;
+}
+
+.product .product-info .productcategory{
+    color: var(--category-color);
+    font-size: 0.9em;
+    padding: 4px 0px;
+}
+
+.product .product-info .productprice{
+    color: var(--category-color);
+    padding: 6px 0px;
+}
+
+.product .product-info .productname{
+    font-size: 1.2em;
+}
+
+div.products{
+    width: 900px;
+    max-width: 70vw;
+}
+
+div.products .flexondesktop{
+    justify-content: space-around;
+}
+
+div.numbering{
+    width: 300px;
+    margin: auto;
+    cursor: pointer;
+    color: var(--category-color);
+}
+
+.numbering .flex{
+    width: max-content;
+    margin: auto;
+}
+div.numbering div#active{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================  Media Queries ============*/
+
+@media screen and (max-width: 1100px){
+    .whenyouclick{
+        display: none;
+    }
+
+    .hiddenonmobile{
+        display: none;
+    }
+
+    .hiddenondesktop{
+        display: block;
+    }
+
+    div.highlighted-photograph div.photo div.label{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 7px 14px;
+        margin-top: -30px;
+    }
+
+    div.flexondesktop{
+        display: block;
+    }
+
+    div.products div.flexondesktop{
+        display: flex;
+    }
+
+    .highlighted-photograph .about{
+        width: auto;
+    }
+
+    .highlighted-photograph .flexondesktop .featured{
+        padding: 50px 0px 30px 0px;
+        text-align: left;
+    }
+
+    .highlighted-photograph .name-of-image{
+        font-size: 23px;
+    }
+
+    .highlighted-photograph h3{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+
+    .featured .featured-images img{
+        padding: 0%;
+        padding-right: 2vw;
+        max-width: 29vw;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .hiddenondesktop{
+        display: block;
+    }
+
+
+    div.products{
+        margin: auto;
+    }
+
+    div.products .product img{
+        width: 70vw;
+        max-width: 250px;
+        height: max-content;
+    }
+    .sale-header{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .sale-header span{
+        color: var(--category-color);
+        font-weight: 100;
+    }
+
+    div.flex-around{
+        display: block;
+    }
+
+    div.products .product{
+        width: fit-content;
+        margin: auto;
+        padding-right: 10px;
+    }
+    
+    .whenyouclick{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+
+
+
+    div.products div.flex-around{
+        display: block;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 890px) {
+
+    div.products div.flexondesktop{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 330px) {
+
+    div.hr-line img{
+    width: 90vw;
+    }
+}
