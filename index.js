@@ -1,6 +1,11 @@
-function hideParent(){
-    
-}
+let close = document.getElementById("closebtn")
+close.addEventListener("click" , function(){this.parentElement.style.display='none'})
+console.log(2)
+
+
+
+
+
 
 let numberingCart = document.getElementById("num-cart-items")
 
@@ -22,11 +27,3 @@ function addedToCart(){
 
 }
 
-
-
-
-//document.getElementById("closebtn").onclick = this.parentElement.style.display='none';
-
-let close = document.getElementById("closebtn")
-close.addEventListener("click" , function(){this.parentElement.style.display='none'})
-console.log(2)
