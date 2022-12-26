@@ -1,6 +1,10 @@
+function hideParent(){
+    
+}
+
 let numberingCart = document.getElementById("num-cart-items")
 
-
+console.log(31)
 
 function increaseCartNumbering() {
     if (!numberingCart.innerHTML == ""){
@@ -17,3 +21,12 @@ increaseCartNumbering()
 function addedToCart(){
 
 }
+
+
+
+
+//document.getElementById("closebtn").onclick = this.parentElement.style.display='none';
+
+let close = document.getElementById("closebtn")
+close.addEventListener("click" , function(){this.parentElement.style.display='none'})
+console.log(2)
