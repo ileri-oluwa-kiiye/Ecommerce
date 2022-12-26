@@ -1,7 +1,19 @@
+let numberingCart = document.getElementById("num-cart-items")
 
-function pleaseWork() {
-    console.log("Hello world!")
-    alert("Hello World!")
+
+
+function increaseCartNumbering() {
+    if (!numberingCart.innerHTML == ""){
+        numberingCart.innerHTML ++;
+    }
+    else{
+        numberingCart.innerHTML = +1
+    }
 }
+increaseCartNumbering()
+increaseCartNumbering()
 
-pleaseWork()
+
+function addedToCart(){
+
+}
