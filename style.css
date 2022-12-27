@@ -66,8 +66,9 @@ div.hr-line img{
 /*-----------The cart alert part---------------*/
 
 .cartimg{
-    max-width: 130px;
-    max-height: 130px;
+    max-width: 100px;
+    max-height: 80px;
+    padding-left: 30px;
 }
 
 .cart-alert #closebtn img{
@@ -448,11 +449,6 @@ div.numbering div#active{
 
 
 
-
-
-
-
-
 /*=================  Media Queries ============*/
 
 @media screen and (max-width: 1100px){
@@ -539,11 +535,11 @@ div.numbering div#active{
         margin: auto;
         padding-right: 10px;
     }
-
+    /*
     .whenyouclick{
         display: none;
     }
-    
+    */
 }
 
 
@@ -597,3 +593,20 @@ div.numbering div#active{
     }
 
 }
+
+
+
+/*------------- Working with the styling of the filters for mobile-------*/
+.filters .mobile{
+    display: none;
+    width: 400px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 5;
+    padding: 4%;
+    height: 100vh;
+    background-color: white;
+}
+
+
