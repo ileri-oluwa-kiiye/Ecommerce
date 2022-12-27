@@ -86,8 +86,8 @@ div.hr-line img{
     padding: 10px;
     padding-top: 50px;
     position: fixed;
-    top: 0px;
-    right: 1%;
+    top: 8%;
+    right: 2%;
     background-color: white;
     border: 2px solid rgb(228,228,228);
     display: none;
@@ -599,13 +599,14 @@ div.numbering div#active{
 /*------------- Working with the styling of the filters for mobile-------*/
 .filters .mobile{
     display: none;
-    width: 380px;
-    max-width: 99vw;
+    width: 350px;
+    max-width: 90vw;
     position: fixed;
     right: 0px;
     top: 0px;
     z-index: 5;
     padding: 4%;
+    padding-left: 70px;
     height: 100vh;
     background-color: white;
 }
