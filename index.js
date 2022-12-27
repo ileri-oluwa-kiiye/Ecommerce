@@ -1,3 +1,38 @@
+function closeParent(){
+    this.parentElement.style.display='none'
+}
+
+function showFilters(){
+    (document.getElementsByClassName("whenyouclick")[0]).style.display = "block"
+}
+
+function increaseCartNumbering() {
+    if (!numberingCart.innerHTML == ""){
+        numberingCart.innerHTML ++;
+    }
+    else{
+        numberingCart.innerHTML = +1
+    }
+}
+
+
+//------------------------------------------------
+
+let cartText = (document.querySelectorAll("#cart-alert h4"))[0]
+let cartImage = (document.querySelectorAll("#cart-alert .image img"))[0]
+let cartPrice = (document.querySelectorAll("#cart-alert .price"))[0]
+let cartAlert = document.getElementById("cart-alert");
+
+
+//cartImage.setAttribute("src", "products/product3.png")
+
+console.log(cartPrice.innerHTML)
+
+
+//------------------------------------------------
+
+let numberingCart = document.getElementById("num-cart-items")
+
 let close = document.getElementById("closebtn")
 close.addEventListener("click" , closeParent)
 
@@ -8,16 +43,12 @@ let button = document.getElementsByClassName("button")[0]
 button.addEventListener("click" , closeParent )
 
 
-function closeParent(){this.parentElement.style.display='none'}
-
-
 let toggle = document.getElementById("toggle")
-function showFilters(){
-    (document.getElementsByClassName("whenyouclick")[0]).style.display = "block"
-}
 toggle.addEventListener("click", showFilters)
 
  
+
+
 
 
 
@@ -27,25 +58,23 @@ for(i=0; i< addToCart.length; i++){
 }
 
 
-function addedToCart(){
+function addedHPToCart(){
     document.getElementById("cart-alert").style.display = "block";
+    console.log(cartPrice.innerHTML);
+    increaseCartNumbering();
 }
 
+let addHpToCart = document.getElementsByClassName("add-to-cart")[0];
+let addHpToCart2 = document.getElementsByClassName("add-to-cart")[1];
+addHpToCart.addEventListener("click", addedHPToCart)
+addHpToCart2.addEventListener("click", addedHPToCart)
 
 
-let numberingCart = document.getElementById("num-cart-items")
 
 console.log(31)
 
-function increaseCartNumbering() {
-    if (!numberingCart.innerHTML == ""){
-        numberingCart.innerHTML ++;
-    }
-    else{
-        numberingCart.innerHTML = +1
-    }
-}
-increaseCartNumbering()
+
+
 
 
 
