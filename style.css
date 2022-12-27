@@ -428,7 +428,12 @@ div.numbering div#active{
     color: black;
 }
 
-
+#closebtn2 img{
+    width: 13px;
+    position: absolute;
+    right: 10%;
+    margin-top: -20px;
+}
 
 
 
@@ -449,10 +454,6 @@ div.numbering div#active{
 /*=================  Media Queries ============*/
 
 @media screen and (max-width: 1100px){
-    .whenyouclick{
-        display: none;
-    }
-
     .hiddenonmobile{
         display: none;
     }
@@ -536,10 +537,11 @@ div.numbering div#active{
         margin: auto;
         padding-right: 10px;
     }
-    
+
     .whenyouclick{
         display: none;
     }
+    
 }
 
 

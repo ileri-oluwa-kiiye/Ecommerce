@@ -38,7 +38,7 @@
             </nav>
             <!--====End of navigaition bar====-->
 
-        <div class="cart-alert">
+            <div class="cart-alert" id="cart-alert">
                 <span id="closebtn"><img src="img/close.png" alt=""></span>
                 <div class="cart-product flex">
                     <div class="about">
@@ -118,7 +118,7 @@
                             <span><img src="img/sort.png" alt=""> Sort By </span>
                             Price
                         </div>
-                        <div class="toggle hiddenondesktop">
+                        <div class="hiddenondesktop" id="toggle">
                             <img src="img/toggle.png" alt="">
                         </div> 
                     </div>
@@ -179,7 +179,9 @@
                             <div class="mobile">
                                 <div class="hiddenondesktop whenyouclick">
                                     <!--The mobile version of the filters for prioritized images-->
+
                                     <h4>Filter</h4>
+                                    <span id="closebtn2"><img src="img/close.png" alt=""></span>
                                     <div class="category">
                                         <div>
                                             <input type="checkbox" name="this" value="People" id="peoplem"><label for="peoplem"> People</label>
