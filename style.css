@@ -601,6 +601,7 @@ div.numbering div#active{
     display: none;
     width: 350px;
     max-width: 90vw;
+    overflow-y: scroll;
     position: fixed;
     right: 0px;
     top: 0px;
