@@ -1,5 +1,8 @@
 function closeParent(){
     this.parentElement.style.display='none';
+}
+
+function closeFilters(){
     (document.querySelectorAll(".filters .mobile")[0]).style.display = "none";
 }
 
@@ -65,7 +68,7 @@ let close = document.getElementById("closebtn")
 close.addEventListener("click" , closeParent)
 
 let close2 = document.getElementById("closebtn2")
-close2.addEventListener("click" , closeParent)
+close2.addEventListener("click" , closeFilters)
 
 let clearFromCart = document.getElementsByClassName("button")[0]
 clearFromCart.addEventListener("click" , clearedFromCart )

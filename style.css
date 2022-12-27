@@ -599,7 +599,8 @@ div.numbering div#active{
 /*------------- Working with the styling of the filters for mobile-------*/
 .filters .mobile{
     display: none;
-    width: 400px;
+    width: 380px;
+    max-width: 99vw;
     position: fixed;
     right: 0px;
     top: 0px;
