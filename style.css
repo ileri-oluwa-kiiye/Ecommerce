@@ -613,3 +613,12 @@ div.numbering div#active{
 }
 
 
+select{
+    outline: none;
+    border: none;
+    font-size: 17px;
+    padding-left: 10px;
+    font-family: var(--font-family)
+}
+
+
